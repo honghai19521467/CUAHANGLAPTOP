@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Test.Models.Sanpham>
+@{
+    ViewData["Title"] = "ThongKe";
+}
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Thống kê</h6>
+        </div>
+
+        <p></p>
+       
+        <div class="card-body">
+            <form action="ThongKePost" >
+                @*<div class="form-group">
+                    <label for="input_nam">Nhập năm</label>
+                    <input type="number" class="form-control" id="input_nam" name="input_nam" required> 
+                </div>*@
+                <div class="form-group">
+                    <label for="input_nam">Nhập năm</label>
+                    <select id="input_nam" class="form-control" name="input_nam">
+                        <option value="2021" selected>2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Thống kê</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    
+
+
